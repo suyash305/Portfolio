@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo1.png" style="width: 300px; margin-top: 20px;" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                    <i class="fas fa-times"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="closemenu()"></i>
+            </nav>
+            <div class="header-text" onclick="openmenu()">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Suyash Srivastava</span><br>Kolkata,India </h1>
+            </div>
+        </div>
+    </div>
+
+<!--------about------>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user 1.jpg" style="width: 250px;">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi, I am currently pursuing my B.E. degree at Jadavpur University in Kolkata.I have a strong interest in website development & data analytics. I have acquired a solid foundation in various tech stacks, including HTML, CSS,JavaScript and MySQL. With a zest for 3D printing, I am driven by curiosity and a love for hands-on experiences. My passion for entrepreneurship fuels my ambition to lead and create, while embracing extracurricular activities enriches my life and shapes my path to a fulfilling, well-rounded future.
+                        <hr>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links"onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Designing Web Applications</li>
+                            <li><span>Graphic Desgin</span><br>Designing Graphics</li>
+                            <li><span>Packaging Engineer</span><br>Packaging Techniques & Materials</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Web Development Intern</span><br>SYNC INTERN'S  (Remote)</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>B.E. Printing Engineering</span><br>Jadavpur University (2022-2026)</li>
+                            <li><span>AISSCE (CBSE)- XII</span><br>DPS, Ruby Park, Kolkata (2022)   88%</li>
+                            <li><span>SSC (CBSE) -X</span><br>DPS, Ruby Park, Kolkata (2020)   94.5%</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--------------------services------------->
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Developer</h2>
+                <p>Expert web development service tailored to your needs. Creating responsive, user-friendly websites with cutting-edge technologies. Focused on delivering visually appealing designs, seamless functionality, and optimized performance. Let's build your online presence together.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>Graphic Designing</h2>
+                <p>Creative graphic design service curated for your brand. Crafting captivating visuals that leave a lasting impression. From logos to marketing materials, I'll bring your ideas to life with flair and originality, elevating your brand identity to new heights.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-print"></i>
+                <h2>Packaging & Printing</h2>
+                <p>Comprehensive packaging and printing service tailored to your products. From concept to production, I ensure eye-catching designs, high-quality materials, and timely delivery. Elevate your brand's packaging and leave a lasting impression on customers.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--------------Portfolio------------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Enlighten U</h3>
+                    <p>E-learning website</p>
+                    <a href="https://github.com/suyash305/E-learning.git"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Meloverse</h3>
+                    <p>Music App</p>
+                    <a href="https://github.com/suyash305/Meloverse.git"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>User Managment App</h3>
+                    <p>CRUD: create, read, update and delete</p>
+                    <a href="https://github.com/suyash305/CRUD.git"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+<!---------------------Contact Form------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>suyashshrivastava305@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+91 7905540334</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/suyash305/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/suyash305"><i class="fa-brands fa-github"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2" style="margin-top: 20px;">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright <i class="fa-regular fa-copyright"></i> Suyash 2023. All Rights Reserved </p>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
